@@ -25,7 +25,6 @@ requirements:
 
 test:
   imports:
-    - CifFile.CifFile
     - CifFile.StarFile
     - CifFile.StarScan
 
