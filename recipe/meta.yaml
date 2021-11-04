@@ -1,6 +1,6 @@
 {% set name = "PyCifRW" %}
-{% set version = "4.4.1" %}
-{% set sha256 = "cef7662f475e0eb78a55c2d55774d474e888c96b0539e5f08550afa902cdc4e1" %}
+{% set version = "4.4.3" %}
+{% set sha256 = "4b2992b98512cda96f7382a79bf289d79d4870104008bc4c8b4a179930d1f67e" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -34,7 +34,7 @@ about:
   license: PSF-2-like
   license_family: other
   license_file: LICENSE
-  summary: 'CIF file support for Python'
+  summary: CIF file support for Python
 
   description: |
     PyCIFRW provides support for reading and writing CIF (Crystallographic
