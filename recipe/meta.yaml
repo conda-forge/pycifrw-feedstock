@@ -33,7 +33,7 @@ test:
 
 about:
   home: https://bitbucket.org/jamesrhester/pycifrw/overview
-  license: PSF-2-like
+  license: LicenseRef-PyCIFRW-PSF-2.0-like
   license_family: other
   license_file: LICENSE
   summary: CIF file support for Python
