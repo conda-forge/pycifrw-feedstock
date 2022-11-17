@@ -1,6 +1,6 @@
 {% set name = "PyCifRW" %}
-{% set version = "4.4.3" %}
-{% set sha256 = "4b2992b98512cda96f7382a79bf289d79d4870104008bc4c8b4a179930d1f67e" %}
+{% set version = "4.4.5" %}
+{% set sha256 = "a8fd092cbefe6ddd4b7e667d05682e5c8c2e64ba63e7ef8b3ce4c07f2ff62827" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
