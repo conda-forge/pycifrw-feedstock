@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -25,11 +25,17 @@ requirements:
     - setuptools
   run:
     - python
+    - ply
+    - numpy
 
 test:
   imports:
     - CifFile.StarFile
     - CifFile.StarScan
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://bitbucket.org/jamesrhester/pycifrw/overview
